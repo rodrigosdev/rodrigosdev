@@ -6,7 +6,6 @@ local rodrigo = {
   company = "snyk.io",
   location = "lisbon, pt",
   languages = { "typescript", "ocaml"},
-  editor = "cursor",
   site = "https://rodrigosantos.dev",
   x = "https://x.com/rrcssantos",
 }
