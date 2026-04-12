@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   },
 
   redirects() {
+    // While the blog is still being built, we redirect all blog routes to the home page
     return [{ destination: "/", permanent: true, source: "/blog/:path*" }];
   },
 };
