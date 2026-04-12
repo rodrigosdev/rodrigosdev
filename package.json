@@ -8,6 +8,11 @@
   ],
   "type": "module",
   "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "types": "turbo types",
+    "test": "turbo test",
+    "test:coverage": "turbo test:coverage",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
     "fmt": "oxfmt",
