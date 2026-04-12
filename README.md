@@ -6,4 +6,3 @@ I´m a Portuguese Engineer based in Lisbon.
 
 - [Website](https://rodrigosantos.dev)
 - [Twitter](https://x.com/rrcssantos)
-
