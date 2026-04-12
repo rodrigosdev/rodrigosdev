@@ -1,12 +1,9 @@
-```lua
--- ~/whoami
+# Hey, I´m Rodrigo 👋
 
-local rodrigo = {
-  role = "ai engineer",
-  company = "snyk.io",
-  location = "lisbon, pt",
-  languages = { "typescript", "ocaml"},
-  site = "https://rodrigosantos.dev",
-  x = "https://x.com/rrcssantos",
-}
-```
+I´m a Portuguese Engineer based in Lisbon.
+
+## Links
+
+- [Website](https://rodrigosantos.dev)
+- [Twitter](https://x.com/rrcssantos)
+
