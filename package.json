@@ -8,7 +8,12 @@
   ],
   "type": "module",
   "devDependencies": {
+    "oxlint": "^1.59.0",
     "turbo": "^2.9.6"
+  },
+  "scripts": {
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
   },
   "packageManager": "bun@1.3.12"
 }
