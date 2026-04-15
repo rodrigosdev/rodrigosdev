@@ -10,7 +10,8 @@
     "components/**/*.tsx",
     "lib/**/*.ts",
     "__tests__/**/*.ts",
-    "__tests__/**/*.tsx"
+    "__tests__/**/*.tsx",
+    "fonts/index.ts"
   ],
   "exclude": ["node_modules"]
 }
