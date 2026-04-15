@@ -13,19 +13,19 @@
   "dependencies": {
     "@rodrigosantosdev/saudade": "workspace:*",
     "geist": "^1.7.0",
-    "next": "^16.2.3",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "next": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
   },
   "devDependencies": {
     "@rodrigosantosdev/typescript-config": "workspace:*",
-    "@tailwindcss/postcss": "^4.2.2",
-    "@types/bun": "^1.3.12",
-    "@types/node": "^25",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "tailwindcss": "^4.2.2",
-    "typescript": "^6"
+    "@tailwindcss/postcss": "catalog:",
+    "@types/bun": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
   },
   "packageManager": "bun@1.3.12"
 }

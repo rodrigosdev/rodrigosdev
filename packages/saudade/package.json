@@ -2,5 +2,19 @@
   "name": "@rodrigosantosdev/saudade",
   "version": "0.0.0",
   "private": true,
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "bun test",
+    "test:coverage": "bun test --coverage"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@rodrigosantosdev/typescript-config": "workspace:*",
+    "@types/bun": "catalog:",
+    "typescript": "catalog:"
+  }
 }

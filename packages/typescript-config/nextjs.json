@@ -3,7 +3,6 @@
   "extends": "./base.json",
   "compilerOptions": {
     "allowImportingTsExtensions": true,
-    "types": ["@types/bun"],
     "plugins": [
       {
         "name": "next"
