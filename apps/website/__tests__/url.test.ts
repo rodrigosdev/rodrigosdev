@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 
-import { siteUrlOrigin, siteUrlProtocol, url } from "../lib/url";
+import { siteUrlOrigin, siteUrlProtocol, url } from "@/lib/url";
 
 describe("siteUrlProtocol", () => {
   test("uses https when NODE_ENV is production", () => {
