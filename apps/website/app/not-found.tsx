@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NotFound = () => (
   <div className="flex flex-col gap-4 items-center justify-center h-svh">
-    <h1 className="font-serif text-[28px] sm:text-[38px] leading-[1.2] text-foreground">
+    <h1 className="font-pixel text-[28px] sm:text-[38px] leading-[1.2] text-foreground">
       Page not found
     </h1>
     <p className="text-muted-foreground">

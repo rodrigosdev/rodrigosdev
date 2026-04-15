@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@rodrigosantosdev/saudade": "workspace:*",
+    "geist": "^1.7.0",
     "next": "^16.2.3",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
