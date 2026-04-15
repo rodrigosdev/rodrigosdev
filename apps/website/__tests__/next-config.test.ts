@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 
-import nextConfig from "../next.config";
+import nextConfig from "@/next.config";
 
 describe("next.config", () => {
   test("configures image formats", () => {
