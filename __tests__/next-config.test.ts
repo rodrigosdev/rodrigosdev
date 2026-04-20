@@ -1,4 +1,4 @@
-import { describe, expect, test } from "bun:test";
+import { beforeAll, describe, expect, test } from "bun:test";
 
 import nextConfig from "~/next.config";
 
@@ -7,27 +7,34 @@ describe("next.config", () => {
     expect(nextConfig.images?.formats).toEqual(["image/avif", "image/webp"]);
   });
 
-  test("defines redirects", async () => {
-    const redirects = await nextConfig.redirects?.();
-
-    expect(redirects).toBeDefined();
-    expect(Array.isArray(redirects)).toBe(true);
-    expect(redirects?.length).toBe(1);
+  test("enables React Compiler", () => {
+    expect(nextConfig.reactCompiler).toBe(true);
   });
 
-  test("all redirects are permanent and point to /", async () => {
-    const redirects = await nextConfig.redirects?.();
+  describe("redirects", () => {
+    let redirects: Awaited<ReturnType<NonNullable<typeof nextConfig.redirects>>>;
 
-    for (const redirect of redirects ?? []) {
-      expect(redirect.destination).toBe("/");
-      expect(redirect.permanent).toBe(true);
-    }
-  });
+    beforeAll(async () => {
+      redirects = await nextConfig.redirects!();
+    });
 
-  test("redirects cover expected legacy routes", async () => {
-    const redirects = await nextConfig.redirects?.();
-    const sources = redirects?.map((r) => r.source);
+    test("defines redirects", () => {
+      expect(redirects).toBeDefined();
+      expect(Array.isArray(redirects)).toBe(true);
+      expect(redirects.length).toBe(1);
+    });
 
-    expect(sources).toContain("/blog/:path*");
+    test("all redirects are permanent and point to /", () => {
+      for (const redirect of redirects) {
+        expect(redirect.destination).toBe("/");
+        expect(redirect.permanent).toBe(true);
+      }
+    });
+
+    test("cover expected legacy routes", () => {
+      const sources = redirects.map((r) => r.source);
+
+      expect(sources).toContain("/blog/:path*");
+    });
   });
 });

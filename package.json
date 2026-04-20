@@ -10,7 +10,8 @@
     "lint:fix": "oxlint --fix",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "types": "tsc --noEmit"
+    "types": "tsc --noEmit",
+    "test": "bun test"
   },
   "dependencies": {
     "geist": "^1.7.0",
