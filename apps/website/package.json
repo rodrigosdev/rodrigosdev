@@ -16,7 +16,8 @@
     "next": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "resend": "^6.12.2"
+    "resend": "catalog:",
+    "sonner": "catalog:"
   },
   "devDependencies": {
     "@rodrigosantosdev/typescript-config": "workspace:*",

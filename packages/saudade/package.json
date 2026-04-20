@@ -38,7 +38,7 @@
   "peerDependencies": {
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
-    "next-themes": "^0.4.6",
+    "next-themes": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:"
   }

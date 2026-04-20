@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { CallToAction } from "@/app/components/call-to-action";
 import { Header } from "@/app/components/header";
 import { Hero } from "@/app/components/hero";
+import { Newsletter } from "@/app/components/newsletter";
 
 export default function Page() {
   return (
@@ -25,6 +26,7 @@ export default function Page() {
       >
         <CallToAction />
       </Suspense>
+      <Newsletter />
     </Header>
   );
 }
