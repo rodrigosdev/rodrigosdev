@@ -5,3 +5,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 # Task Completion Requirements
 
 - All of `bun fmt`, `bun lint`, `bun types` and `bun test` must pass before considering tasks completed.
+
+# Use the relative import.
+
+When possible always use the `~/` alias. Never use `../../../../`.
