@@ -8,7 +8,7 @@ import "./globals.css";
 
 const title = "AI engineer | Rodrigo Santos";
 const description =
-  "I design and build software on the internet. I’m currently living in Lisbon, Portugal.";
+  "I design and build software on the internet. I'm currently living in Lisbon, Portugal.";
 
 export const metadata: Metadata = {
   alternates: {
