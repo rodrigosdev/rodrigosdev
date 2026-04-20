@@ -1,5 +1,0 @@
-bun lint
-bun fmt
-bun types
-bun test
-bun run build
