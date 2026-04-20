@@ -1,6 +1,7 @@
 import { ClientProvider } from "@rodrigosantosdev/saudade/components/provider/client";
 import { ServerProvider } from "@rodrigosantosdev/saudade/components/provider/server";
 import { fonts } from "@rodrigosantosdev/saudade/fonts";
+import { cn } from "@rodrigosantosdev/saudade/lib/utils";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -76,7 +77,7 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => (
   <html lang="en" suppressHydrationWarning>
-    <body className={fonts}>
+    <body className={cn(fonts, "touch-manipulation font-sans antialiased")}>
       <ClientProvider>
         <main className="relative z-10 mx-auto grid w-full max-w-2xl gap-16 sm:gap-24 px-4 py-16 sm:py-32">
           {children}
