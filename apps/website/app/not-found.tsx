@@ -9,7 +9,7 @@ const NotFound = () => (
       <p className="text-muted-foreground">
         The page you&apos;re looking for doesn&apos;t exist.
       </p>
-      <Link href="/" className="underline">
+      <Link href="/" className="text-foreground underline">
         Go home
       </Link>
     </div>
