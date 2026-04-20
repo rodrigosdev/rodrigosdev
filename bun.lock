@@ -16,6 +16,7 @@
       "version": "0.0.0",
       "dependencies": {
         "@rodrigosantosdev/saudade": "workspace:*",
+        "geist": "^1.7.0",
         "next": "catalog:",
         "react": "catalog:",
         "react-dom": "catalog:",
