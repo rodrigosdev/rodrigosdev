@@ -1,17 +1,12 @@
 "use client";
 
-import { HelperLayout } from "./components/helper-layout";
-import { Heading } from "./components/typography/heading";
-import { Paragraph } from "./components/typography/paragraph";
-
 const Error = () => (
-  <HelperLayout>
-    <Heading text="Something went wrong" />
-    <Paragraph
-      text="An unexpected error occurred. Please try refreshing the page."
-      variant="muted"
-    />
-  </HelperLayout>
+  <div className="flex flex-col gap-4">
+    <h1 className="font-pixel text-2xl sm:text-4xl leading-tight text-foreground">
+      Something went wrong
+    </h1>
+    <p>An unexpected error occurred. Please try refreshing the page.</p>
+  </div>
 );
 
 export default Error;

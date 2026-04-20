@@ -13,7 +13,7 @@ export default function Page() {
           <p>
             Follow me on{" "}
             <a
-              href="https://x.com/haydenbleasel"
+              href="https://x.com/rrcssantos"
               rel="noopener noreferrer"
               target="_blank"
             >
