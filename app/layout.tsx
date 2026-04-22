@@ -3,6 +3,8 @@ import { GeistPixelSquare } from "geist/font/pixel";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { ClientProvider } from "~/components/provider/client";
+import { ServerProvider } from "~/components/provider/server";
 import { getSiteUrl } from "~/lib/url";
 import "./globals.css";
 
@@ -78,9 +80,12 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} ${GeistPixelSquare.variable} touch-manipulation antialiased`}
       >
-        <main className="relative z-10 mx-auto grid w-full max-w-2xl gap-16 sm:gap-24 px-4 py-16 sm:py-32 font-sans">
-          {children}
-        </main>
+        <ClientProvider>
+          <main className="relative z-10 mx-auto grid w-full max-w-2xl gap-16 sm:gap-24 px-4 py-16 sm:py-32 font-sans">
+            {children}
+          </main>
+        </ClientProvider>
+        <ServerProvider />
       </body>
     </html>
   );
