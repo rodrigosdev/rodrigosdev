@@ -6,6 +6,10 @@ import type { ReactNode } from "react";
 import { Provider } from "~/components/provider";
 import { getSiteUrl } from "~/lib/url";
 import "./globals.css";
+import { Geist } from "next/font/google";
+import { cn } from "~/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const title = "AI engineer | Rodrigo Santos";
 const description =
@@ -75,7 +79,7 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={cn("font-sans", geist.variable)}>
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} ${GeistPixelSquare.variable} touch-manipulation antialiased`}
       >
