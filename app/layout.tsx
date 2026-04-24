@@ -80,7 +80,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         className={`${GeistSans.variable} ${GeistMono.variable} ${GeistPixelSquare.variable} touch-manipulation antialiased`}
       >
         <Provider>
-          <main className="relative z-10 mx-auto grid w-full max-w-2xl gap-16 sm:gap-24 px-4 py-16 sm:py-32 font-sans">
+          <main className="min-h-screen p-4 sm:p-6 flex flex-col xl:flex-row justify-start xl:justify-center relative font-mono items-start">
             {children}
           </main>
         </Provider>
