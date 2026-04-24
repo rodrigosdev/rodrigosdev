@@ -23,7 +23,11 @@ export default function Home() {
     <>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <Portrait />
-      <div className="max-w-full sm:max-w-lg w-full mx-auto text-sm [&>p]:text-xs pt-0 xl:pt-14 pb-14 "></div>
+      <div className="max-w-full sm:max-w-lg w-full mx-auto text-sm [&>p]:text-xs pt-0 xl:pt-14 pb-14 ">
+        <h1 className="mb-2 text-left text-white">
+          Rodrigo Santos<span className="animate-blink">_</span>
+        </h1>
+      </div>
     </>
   );
 }
