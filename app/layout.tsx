@@ -3,7 +3,7 @@ import { GeistPixelSquare } from "geist/font/pixel";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import Navigation from "~/components/navigation";
+import { Navigation } from "~/components/navigation";
 import { Provider } from "~/components/provider";
 import { getSiteUrl } from "~/lib/url";
 import "./globals.css";
@@ -83,9 +83,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <Provider>
           <main className="min-h-screen p-4 sm:p-6 flex flex-col xl:flex-row justify-start xl:justify-center relative font-mono items-start">
             <Navigation />
-            <ViewTransition enter="auto" exit="auto" default="none">
-              {children}
-            </ViewTransition>
+            {children}
           </main>
         </Provider>
       </body>

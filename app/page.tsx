@@ -20,11 +20,6 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      <nav>Index</nav>
-      <div>
-        <h1>Hello World</h1>
-      </div>
-      <div>Image</div>
     </>
   );
 }
