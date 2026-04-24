@@ -1,3 +1,5 @@
+import { Portrait } from "~/components/image";
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -20,6 +22,7 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <Portrait />
     </>
   );
 }
