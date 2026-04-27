@@ -47,6 +47,7 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --animate-blink: 1s step-end infinite blink;
 }
 
 :root {
@@ -85,8 +86,8 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --background: oklch(0 0 0);
+  --foreground: oklch(0.6534 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
@@ -118,9 +119,19 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 uppercase;
   }
   body {
     @apply bg-background text-foreground;
@@ -128,4 +139,33 @@
   html {
     @apply font-sans;
   }
+}
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--foreground);
+  transform: scaleX(1);
+  transform-origin: 0 100%;
+  transition:
+    transform 0.3s ease-out,
+    transform-origin 0s;
+}
+
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
+  transform: scaleX(0);
+  transform-origin: 100% 100%;
+  transition:
+    transform 0.3s ease-out,
+    transform-origin 0s;
 }
