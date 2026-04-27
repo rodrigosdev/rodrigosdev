@@ -8,6 +8,7 @@ const Portrait = () => {
         alt="Rodrigo Santos - Portrait photo"
         width={512}
         height={512}
+        loading="eager"
         className="object-cover w-32 h-32 sm:w-48 sm:h-48 xl:w-full xl:h-full grayscale"
       />
     </div>
