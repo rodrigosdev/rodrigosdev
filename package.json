@@ -1,6 +1,8 @@
 {
   "name": "rodrigosdev",
-  "version": "0.1.0",
+  "description": "Rodrigo Santos' personal website",
+  "license": "MIT",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "bun --bun next dev",
@@ -15,6 +17,7 @@
     "react": "19.2.5",
     "react-dom": "19.2.5"
   },
+  "packageManager": "bun@1.3.12",
   "devDependencies": {
     "@biomejs/biome": "2.4.13",
     "@tailwindcss/postcss": "^4.2.4",
