@@ -7,7 +7,7 @@ const getOrigin = (envUrl?: string) => envUrl ?? "localhost:3000";
 
 describe("url", () => {
   test("constructs url from environment variables", async () => {
-    const { url } = await import("../lib/url");
+    const { url } = await import("~/utils/url");
 
     expect(url).toMatch(/^https?:\/\/.+/);
   });

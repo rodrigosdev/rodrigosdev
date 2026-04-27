@@ -2,8 +2,8 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { url } from "~/lib/url";
-import "~/styles/globals.css";
+import "~/styles/css/globals.css";
+import { url } from "~/utils/url";
 
 const APP_NAME = "Rodrigo Santos's corner of the Web";
 const APP_DEFAULT_TITLE = "AI Engineer | Rodrigo Santos";
