@@ -77,7 +77,7 @@ export default function Home() {
         </p>
         <div className="mt-6 sm:mt-8 mb-4">[***]</div>
         <blockquote className="text-xs italic">
-          THE REASON TO FINISH IS TO START SOMETHING NEW." - Alan Kay
+          "Stay Hungry, Stay Foolish." - Steve Jobs
         </blockquote>
       </div>
     </>
