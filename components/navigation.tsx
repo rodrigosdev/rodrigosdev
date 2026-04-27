@@ -11,7 +11,7 @@ const links = [
 
 const Navigation = () => {
   const pathname = usePathname();
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) => (href === "/" ? pathname === href : pathname === href || pathname.startsWith(`${href}/`));
   const hasSlash = (index: number) => index !== links.length - 1;
   return (
     <nav className="px-4 sm:px-0 w-full max-w-full sm:max-w-lg mx-auto xl:mx-0 xl:w-auto xl:max-w-none xl:fixed xl:left-6 xl:top-6 text-xs mb-6 xl:mb-0">
@@ -23,6 +23,7 @@ const Navigation = () => {
             "transition-colors",
             isActive(link.href) ? "text-white" : "transition-colors hover:text-white",
           )}
+          aria-current={isActive(link.href) ? "page" : undefined}
           prefetch
         >
           {link.label}
