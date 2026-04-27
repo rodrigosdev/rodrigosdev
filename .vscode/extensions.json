@@ -5,7 +5,6 @@
 
     // CSS & Styling
     "bradlc.vscode-tailwindcss",
-    "csstools.postcss",
 
     // DX Enhancements
     "yoavbls.pretty-ts-errors",

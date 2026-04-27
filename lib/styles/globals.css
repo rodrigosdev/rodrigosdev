@@ -36,7 +36,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* Selection styling */
 *::selection {
   background-color: var(--foreground);
