@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "biome check",
-    "format": "biome format --write"
+    "dev": "bun --bun next dev",
+    "build": "bun --bun next build",
+    "start": "bun --bun next start",
+    "check": "biome check --write",
+    "format": "biome format --write",
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
     "next": "16.2.4",

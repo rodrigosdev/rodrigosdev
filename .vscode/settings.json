@@ -1,6 +1,7 @@
 {
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
+  "css.lint.unknownAtRules": "ignore",
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.defaultFormatter": "biomejs.biome",
   "editor.codeActionsOnSave": {
