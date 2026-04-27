@@ -4,4 +4,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 # Task Completion Requirements
 
-- All of `bun fmt`, `bun lint`, and `bun tsc` must pass before considering tasks completed.
+- All of `bun fmt`, `bun lint`,`bun tsc`, and `bun test` must pass before considering tasks completed.
