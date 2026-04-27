@@ -51,7 +51,7 @@ export default function Home() {
           Bachelor's Degree in Computer Science and Engineering at NOVA Lisbon
         </p>
         <h2 className="text-left text-white mb-1">Projects</h2>
-        <ul className="ist-none p-0 space-y-1 mb-6 sm:mb-">
+        <ul className="list-none p-0 space-y-1 mb-6 sm:mb-6">
           <li>
             <a
               href="https://github.com/rodrigosdev"
