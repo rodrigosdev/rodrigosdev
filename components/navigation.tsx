@@ -26,7 +26,7 @@ const Navigation = () => {
           prefetch
         >
           {link.label}
-          {hasSlash(index) && <span className="mx-2">/</span>}
+          {hasSlash(index) && <span className="text-foreground mx-2">/</span>}
         </Link>
       ))}
     </nav>
