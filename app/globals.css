@@ -140,3 +140,32 @@
     @apply font-sans;
   }
 }
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--foreground);
+  transform: scaleX(1);
+  transform-origin: 0 100%;
+  transition:
+    transform 0.3s ease-out,
+    transform-origin 0s;
+}
+
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
+  transform: scaleX(0);
+  transform-origin: 100% 100%;
+  transition:
+    transform 0.3s ease-out,
+    transform-origin 0s;
+}

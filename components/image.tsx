@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Portrait = () => {
   return (
-    <div className="w-full max-w-full sm:max-w-lg mx-auto xl:mx-0 xl:w-48 xl:max-w-none mb-4 xl:mb-0 xl:absolute xl:top-6 xl:right-6">
+    <div className="px-4 sm:px-0 w-full max-w-full sm:max-w-lg mx-auto xl:mx-0 xl:w-48 xl:max-w-none mb-4 xl:mb-0 xl:absolute xl:top-6 xl:right-6">
       <Image
         src="/portrait.png"
         alt="Rodrigo Santos - Portrait photo"
