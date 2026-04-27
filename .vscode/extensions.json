@@ -1,3 +1,14 @@
 {
-  "recommendations": ["biomejs.biome"]
+  "recommendations": [
+    // Formatting & Linting
+    "biomejs.biome",
+
+    // CSS & Styling
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+
+    // DX Enhancements
+    "yoavbls.pretty-ts-errors",
+    "waderyan.gitblame"
+  ]
 }
