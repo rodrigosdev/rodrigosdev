@@ -1,9 +1,9 @@
-## Rodrigo Santos
+My name is Rodrigo and I live in Lisbon, Portugal. I'm currently working at [Snyk][snyk] as an AI Engineer. 
 
-### A bit about me
-My name is Rodrigo and I live in Lisbon, Portugal. Eager learner, always with an eye on new stuff. My passion is Distributed Systems, Cybersecurity, Databases and Infrastructure in General. I'm currently working at [Snyk][snyk].
-Outside of _work_, I like surfing and reading books. I'm currently learning Go which is top tier ***fabulous***
+Check out my [Twitter][twitter] or [my site I guess][website]
 
-![gopher dancing](./dancing-gopher.gif)
+<!-- ![gopher dancing](./assets/dancing-gopher.gif) -->
 
 [snyk]: https://snyk.io
+[twitter]: https://x.com/rrcssantos
+[website]: https://rodrigosantos.dev
